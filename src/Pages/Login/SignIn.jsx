@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { selectUser } from "../Store";
 import { useCookies } from 'react-cookie';
 import { useNavigate } from "react-router-dom";
 import { UserContext } from "../../context/context";

@@ -49,19 +49,7 @@ function SignUp() {
   };
 
   const handlerSubmit = (event) => {
-    event.preventDefault();
-    if (name == "") {
-      setErrorName("Bạn hãy nhập Họ và Tên");
-    }
-    if (email == "") {
-      setErrorEmail("Bạn hãy nhập Email");
-    }
-    if (password == "") {
-      setErrorPassword("Bạn hãy nhập Password");
-    }
-    if (phone == "") {
-      setErrorPhone("Bạn hãy nhập số điện thoại");
-    }
+    event.preventDefault();   
 
     if (name != "" && email != "" && password.length > 8 && phone != "") {
       const myHeaders = new Headers();
@@ -70,7 +58,7 @@ function SignUp() {
       const raw = JSON.stringify({
         "fullName": name,
         "email": email,
-        "phoneNumber": phone,
+        "phoneNumber": phone.toString(),
         "password": password
       });
 
