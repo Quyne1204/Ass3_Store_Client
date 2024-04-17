@@ -68,7 +68,7 @@ function SignUp() {
       myHeaders.append("Content-Type", "application/json");
 
       const raw = JSON.stringify({
-        "username": name,
+        "fullName": name,
         "email": email,
         "phoneNumber": phone,
         "password": password

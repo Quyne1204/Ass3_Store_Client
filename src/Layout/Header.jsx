@@ -76,7 +76,7 @@ function Header() {
               </svg>
               <NavLink className="text-black text-decoration-none" to="/order/history">
                 <button className="border-0 fs-5 bg-white">
-                  {user.info.username == '' ? 'Xin chào bạn' : 'Xin chào, ' + user.info.username}
+                  {user.info.username == '' ? 'Xin chào bạn' : 'Xin chào, ' + user.info.fullName}
                 </button>
               </NavLink>
             </button>
