@@ -1,0 +1,30 @@
+.container {
+  margin: auto !important;
+}
+ul button:hover {
+  color: orange;
+}
+
+.a a {
+  text-decoration: none;
+  color: rgb(161, 160, 160);
+}
+
+.live-chat {
+  position: fixed;
+  z-index: 9999;
+  bottom: 100px;
+  right: 100px;
+}
+.live-chat:hover {
+  transform: scale(1.1);
+}
+.chat {
+  width: 400px;
+  height: 420px;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  z-index: 9999;
+  bottom: 150px;
+  right: 150px;
+}

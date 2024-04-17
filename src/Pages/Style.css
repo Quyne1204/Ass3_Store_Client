@@ -1,0 +1,93 @@
+.banner {
+  background-image: url("../images/banner1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.banner-login {
+  background-image: url("../images/banner1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.text-banner {
+  width: 420px;
+  padding: 70px 70px;
+}
+.more {
+  background-color: rgb(243, 243, 243);
+}
+.categories img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.product:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.banner-shop {
+  background-color: rgb(234, 233, 233);
+}
+
+.popup {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.popup-content {
+  width: 1000px !important;
+  height: auto;
+  background-color: white;
+}
+.desc {
+  height: 400px;
+}
+.desc-content {
+  height: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-count {
+  height: 34px;
+  width: 30px;
+  font-size: 23px;
+  line-height: 24px;
+  text-align: center;
+}
+.input-total {
+  width: 105px;
+}
+.input-total-sum {
+  width: 90px;
+  background-color: #d9d9da;
+}
+
+.bg-total {
+  background-color: #d9d9da;
+}
+
+.checkout {
+  background-color: #d9d9da;
+}
+.checkout-name {
+  height: 20px;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.br {
+  border-bottom: 1px solid black;
+}
