@@ -65,7 +65,7 @@ function SignUp() {
 
     if (name != "" && email != "" && password.length > 8 && phone != "") {
       const myHeaders = new Headers();
-      myHeaders.append("Content-Type", "application/json");
+      myHeaders.append('Content-Type', 'application/json');
 
       const raw = JSON.stringify({
         "fullName": name,
@@ -93,10 +93,8 @@ function SignUp() {
 
         })
         .catch((error) => console.error(error));
-      // window.location.href = "/login";
     }
   };
-  // useEffect(() => { console.log(error)}, [handlerSubmit]);
 
   return (
     <div className="banner-login">
@@ -138,7 +136,7 @@ function SignUp() {
               />
               {errorPhone && <p className="p-2 text-danger">{errorPhone}</p>}
               {error && error.phone && <p className="p-2 text-danger">{error.phone}</p>}
-              
+
               {success && <p className="p-2 text-danger">{success}</p>}
               <button
                 type="submit"
