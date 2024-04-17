@@ -18,7 +18,7 @@ function HistoryDetail() {
       redirect: "follow"
     };
 
-    fetch(`http://localhost:5000/order/history/detail/${id}`, requestOptions)
+    fetch(`https://ass3-store-server.onrender.com/order/history/detail/${id}`, requestOptions)
       .then((response) => response.json())
       .then((result) => setData(result[0]))
       .catch((error) => console.error(error));

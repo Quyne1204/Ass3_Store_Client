@@ -81,7 +81,7 @@ function SignUp() {
         redirect: "follow"
       };
 
-      fetch("http://localhost:5000/auth/register", requestOptions)
+      fetch("https://ass3-store-server.onrender.com/auth/register", requestOptions)
         .then((response) => response.json())
         .then((result) => {
           if (result.error) {

@@ -15,7 +15,7 @@ function Shop() {
       redirect: "follow"
     };
 
-    fetch("http://localhost:5000/product", requestOptions)
+    fetch("https://ass3-store-server.onrender.com/product", requestOptions)
       .then((response) => response.json())
       .then((result) => setProduct(result))
       .catch((error) => console.error(error));

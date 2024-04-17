@@ -18,7 +18,7 @@ function Detail() {
       redirect: "follow"
     };
 
-    fetch(`http://localhost:5000/product/detail/${params.id}`, requestOptions)
+    fetch(`https://ass3-store-server.onrender.com/product/detail/${params.id}`, requestOptions)
       .then((response) => response.json())
       .then((result) => setProduct(result))
       .catch((error) => console.error(error));
@@ -34,7 +34,7 @@ function Detail() {
       redirect: "follow"
     };
 
-    fetch(`http://localhost:5000/product/related/category?cate=${product.category}`, requestOptions)
+    fetch(`https://ass3-store-server.onrender.com/product/related/category?cate=${product.category}`, requestOptions)
       .then((response) => response.json())
       .then((result) => setRelated(result))
       .catch((error) => console.error(error));

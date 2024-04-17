@@ -94,7 +94,7 @@ function Checkout() {
         body: raw,
         redirect: "follow"
       };
-      fetch("http://localhost:5000/order/checkout", requestOptions)
+      fetch("https://ass3-store-server.onrender.com/order/checkout", requestOptions)
         .then((response) => response.json())
         .then((result) => {
           if (result.message) {
